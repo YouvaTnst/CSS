@@ -98,3 +98,20 @@ body{
     bottom: -80px;
     letter-spacing: 0.15em;
 }
+@keyframes textFade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+.container .point p:nth-child(1){
+    margin-left: -15px;
+    color: #fff;
+}
+.container .point p:nth-child(3){
+    margin-left: 15px;
+    color: #fff;
+}
