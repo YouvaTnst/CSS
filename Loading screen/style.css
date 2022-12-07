@@ -96,22 +96,36 @@ body{
     font-size: 1.5em;
     font-family: consolas;
     bottom: -80px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.20em;
+    margin-left: -40px;
+}
+
+/* Points */
+.container .point p{
+    content: '';
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background: #FFF;
+    animation: textFade 1.5s ease-in-out infinite;
 }
 @keyframes textFade {
-    from {
+    0%, 100% {
       opacity: 1;
     }
-    to {
+    50% {
       opacity: 0;
     }
   }
-
-.container .point p:nth-child(1){
-    margin-left: -15px;
-    color: #fff;
-}
 .container .point p:nth-child(3){
-    margin-left: 15px;
-    color: #fff;
+    animation-delay: 1.25s;
+    margin-left: 6px
+}
+
+.container .point p:nth-child(2){
+    animation-delay: 1s;
+    margin-left: -18px;
+}
+.container .point p:nth-child(1){
+    animation-delay: 0.75s;
 }
